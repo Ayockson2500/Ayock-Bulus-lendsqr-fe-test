@@ -1,0 +1,394 @@
+.singleUser {
+  display: flex;
+}
+.singleUser .singleUserContainer {
+  flex: 6;
+}
+.singleUser .singleUserContainer .back {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .back {
+    padding: 20px 7px;
+    margin-left: 10px;
+  }
+}
+.singleUser .singleUserContainer .back .backImg {
+  width: 23px;
+}
+.singleUser .singleUserContainer .back .backUsers {
+  margin-left: 10px;
+  color: #545f7d;
+  font-size: 13px;
+  font-weight: 400;
+}
+.singleUser .singleUserContainer .userDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .singleUser .singleUserContainer .userDetailsContainer {
+    flex-direction: column !important;
+    gap: 20px;
+    padding: 5px 5px;
+  }
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userDetailsContainer {
+    padding: 5px 10px;
+  }
+}
+.singleUser .singleUserContainer .userDetailsContainer .userDetails {
+  color: #213f7d;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userDetailsContainer .userDetails {
+    font-size: 20px;
+  }
+}
+.singleUser .singleUserContainer .userDetailsContainer .btnContainer .blacklistUser {
+  color: #e4033b;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #e4033b;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userDetailsContainer .btnContainer .blacklistUser {
+    font-size: 10px;
+    padding: 4px 7px;
+  }
+}
+.singleUser .singleUserContainer .userDetailsContainer .btnContainer .activateUser {
+  color: #39cdcc;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #39cdcc;
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userDetailsContainer .btnContainer .activateUser {
+    font-size: 10px;
+    padding: 4px 7px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader {
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  margin: 20px 30px;
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .singleUser .singleUserContainer .userInfoHeader {
+    margin: 20px 3px;
+  }
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader {
+    margin: 20px 10px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop {
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px !important;
+  }
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop {
+    padding: 10px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  height: 60px;
+  border-right: 0.5px solid rgb(230, 229, 229);
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name {
+    margin-right: 10px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dp {
+  width: 70px;
+  margin-right: 20px;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dp {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dpName {
+  margin-right: 50px;
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dpName {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dpName {
+    margin-right: 30px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dpName .dpFullName {
+  color: #213f7d;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dpName .dpFullName {
+    font-size: 14px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .name .dpName .dpFullDesc {
+  color: #545f7d;
+  font-size: 12px;
+  font-weight: 400;
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersTier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin-right: 30px;
+  height: 60px;
+  border-right: 0.5px solid rgb(230, 229, 229);
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersTier .usersTiertxt {
+  font-size: 14px;
+  font-weight: 500;
+  color: #545f7d;
+  margin-right: 30px;
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersTier .star {
+  display: flex;
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersTier .star .starImg {
+  width: 14px;
+  margin-right: 3px;
+}
+@media (min-width: 0) and (max-width: 769px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersTier {
+    display: none;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersBal {
+  display: flex;
+  flex-direction: column;
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersBal .bal {
+  color: #213f7d;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersBal .bal {
+    font-size: 19px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersBal .balDesc {
+  color: #213f7d;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderTop .usersBal .balDesc {
+    font-size: 11px;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+  position: relative;
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .otherDetails {
+  display: none;
+}
+@media (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom:hover .otherDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    z-index: 999;
+    background-color: white;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .genDetails {
+  color: #39cdcc;
+  font-size: 14px;
+  font-weight: 400;
+  width: 140px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #39cdcc;
+  cursor: pointer;
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .doc {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  width: 140px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 0) and (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .doc {
+    display: none;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .bank {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  width: 140px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 0px) and (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .bank {
+    display: none;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .loan {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  width: 100px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 0px) and (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .loan {
+    display: none;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .saving {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  width: 100px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 0) and (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .saving {
+    display: none;
+  }
+}
+.singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .app {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  width: 140px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 0) and (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoHeader .userInfoHeaderBottom .app {
+    display: none;
+  }
+}
+.singleUser .singleUserContainer .userInfoBody {
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  margin: 35px 30px;
+  padding: 30px;
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .singleUser .singleUserContainer .userInfoBody {
+    padding: 7px;
+  }
+}
+@media (min-width: 0) and (max-width: 950px) {
+  .singleUser .singleUserContainer .userInfoBody {
+    margin: 35px 10px;
+  }
+}
+.singleUser .singleUserContainer .userInfoBody .bodyInfo {
+  display: flex;
+  flex-direction: column;
+}
+.singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoTitle {
+  color: #213f7d;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoTitle {
+    font-size: 14px;
+  }
+}
+.singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc {
+  display: flex;
+  flex-wrap: wrap;
+}
+.singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc .bodyInfoDescDetails {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+@media (min-width: 0) and (max-width: 760px) {
+  .singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc .bodyInfoDescDetails {
+    width: 50%;
+  }
+}
+.singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc .bodyInfoDescDetails .bodyInfoDescDetails1 {
+  color: #545f7d;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc .bodyInfoDescDetails .bodyInfoDescDetails1 {
+    font-size: 10px;
+  }
+}
+.singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc .bodyInfoDescDetails .bodyInfoDescDetails2 {
+  color: #545f7d;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .singleUser .singleUserContainer .userInfoBody .bodyInfo .bodyInfoDesc .bodyInfoDescDetails .bodyInfoDescDetails2 {
+    font-size: 12px;
+  }
+}
+.singleUser .singleUserContainer .userInfoBody hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(230, 229, 229);
+  margin: 30px 0px;
+}/*# sourceMappingURL=singleUser.css.map */

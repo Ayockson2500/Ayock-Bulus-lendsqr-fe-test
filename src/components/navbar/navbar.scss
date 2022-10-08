@@ -1,0 +1,252 @@
+@import "../../breakpoints";
+
+.navbar {
+  height: 74px;
+  border-bottom: 0.5px solid rgb(230, 229, 229);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  -webkit-box-shadow: 0px 6px 9px -9px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 6px 9px -9px rgba(0, 0, 0, 0.34);
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    @include xs {
+      padding: 10px;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      color: #213f7d;
+
+      @include xs {
+        display: initial;
+        font-size: 15px;
+        margin-bottom: 7px;
+      }
+
+      @include sm {
+        display: initial;
+        font-size: 15px;
+      }
+
+      @include sm2 {
+        display: initial;
+        font-size: 20px;
+      }
+
+      @include md {
+        display: initial;
+        font-size: 20px;
+      }
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid rgb(226, 225, 225);
+      border-radius: 7px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 35px;
+
+      @include breakpoint(360px, 520px) {
+        height: 20px;
+        width: 100px !important;
+      }
+
+      @include xs {
+        padding: 2px;
+        display: none;
+      }
+
+      @include sm {
+        padding: 2px;
+        width: 150px;
+        height: 20px;
+      }
+
+      @include sm2 {
+        padding: 2px;
+        width: 200px;
+        height: 25px;
+      }
+
+      .searchInput {
+        input {
+          border: none;
+          outline: none;
+          padding: 10px;
+          background: transparent;
+          @include breakpoint(360px, 520px) {
+            width: 50px !important;
+          }
+
+          &::placeholder {
+            font-size: 11px;
+            color: #545f7d;
+            opacity: 70%;
+          }
+        }
+      }
+
+      .searchIcon {
+        background-color: #39cdcc;
+        width: 30px;
+        position: absolute;
+        right: 0;
+        padding: 11.5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 7px;
+
+        @include sm2 {
+          padding: 8px;
+        }
+
+        @include sm {
+          padding: 5px;
+          width: 25px;
+        }
+      }
+    }
+
+    .logoContainer {
+      width: 100px;
+      display: none;
+
+      @include xs {
+        display: initial;
+        width: 70px;
+      }
+
+      @include sm {
+        display: initial;
+        width: 70px;
+      }
+
+      @include sm2 {
+        display: initial;
+        width: 80px;
+      }
+
+      @include md {
+        display: initial;
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .docs {
+        color: #213f7d;
+        text-decoration: underline;
+        font-size: 16px;
+        margin-right: 60px;
+        cursor: pointer;
+
+        @include xs {
+          display: none;
+        }
+
+        @include sm {
+          display: none;
+        }
+
+        @include sm2 {
+          display: none;
+        }
+
+        @include md {
+          display: none;
+        }
+      }
+
+      .bellIcon {
+        margin-right: 30px;
+
+        @include xs {
+          width: 15px;
+        }
+
+        @include breakpoint(360px, 520px) {
+          margin-right: 8px;
+          width: 15px;
+        }
+      }
+
+      .userImg {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+
+        @include xs {
+          width: 30px;
+          height: 30px;
+        }
+
+        @include breakpoint(360px, 520px) {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      .username {
+        color: #213f7d;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 15px;
+
+        @include xs {
+          display: none;
+        }
+
+        @include breakpoint(360px, 520px) {
+          display: none;
+        }
+      }
+
+      .profile {
+        margin-right: 15px;
+        cursor: pointer;
+        @include breakpoint(360px, 520px) {
+          margin-right: 5px;
+        }
+
+        .options {
+          display: none;
+        }
+
+        span {
+          padding: 10px 15px;
+          cursor: pointer;
+        }
+
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: rgb(245, 243, 243);
+            right: 15px;
+            opacity: 0.6;
+            color: #213f7d;
+          }
+        }
+      }
+    }
+  }
+}

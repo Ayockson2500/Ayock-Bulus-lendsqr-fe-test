@@ -1,0 +1,32 @@
+.widget {
+  display: flex;
+  flex: 1;
+  padding: 15px;
+  justify-content: space-between;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 110px;
+}
+.widget .left, .widget .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.widget .left .title, .widget .right .title {
+  font-size: 14px;
+  color: #545F7D;
+  font-weight: 500;
+}
+.widget .left .counter, .widget .right .counter {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.widget .left .icon, .widget .right .icon {
+  width: 30px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}/*# sourceMappingURL=widget.css.map */

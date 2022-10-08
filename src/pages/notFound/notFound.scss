@@ -1,0 +1,17 @@
+.notFound {
+  display: flex;
+
+  .notFoundCont {
+    flex: 6;
+
+    .notFoundMsg {
+      color: #213f7d;
+      font-size: 30px;
+      font-weight: 600;
+      height: calc(100vh - 74px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

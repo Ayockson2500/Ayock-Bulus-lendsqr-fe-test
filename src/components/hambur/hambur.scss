@@ -1,0 +1,154 @@
+@import "../../breakpointz";
+@import "../../breakpoints";
+
+.hambur {
+  width: 50%;
+  min-height: 100vh;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  @include lg2 {
+    display: none;
+  }
+
+  @include xs {
+    width: 100%;
+  }
+
+  @include breakpoint(300px, 450px) {
+    width: 100%;
+  }
+
+  @include breakpoint(450px, 630px) {
+    width: 100%;
+  }
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      width: 120px;
+      margin-top: 10px;
+
+      @include xs {
+        width: 70px;
+      }
+
+      @include breakpoint(300px, 450px) {
+        width: 90px;
+      }
+
+      @include breakpoint(450px, 620px) {
+        width: 95px;
+      }
+    }
+
+    .hamburger{
+      position: absolute;
+      font-size: 15;
+      right: 10px;
+      top: 20px;
+      color: #213f7d;
+      cursor: pointer;
+    }
+  }
+
+  .center {
+    padding-left: 0px;
+    -webkit-box-shadow: 6px 0px 9px -9px rgba(0, 0, 0, 0.34);
+    box-shadow: 6px 0px 9px -9px rgba(0, 0, 0, 0.34);
+    .swhOrg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      color: #213f7d;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      margin-right: 19px;
+      cursor: pointer;
+
+      .swhOrgText {
+        margin: 0px 7px;
+      }
+    }
+    .title {
+      font-size: 10px;
+      font-weight: 500;
+      color: #545f7d;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      margin-left: 22px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 10px 8px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          background-color: #f4fcfc;
+          border-left: 3px solid #39cdcc;
+        }
+
+        .icons {
+          margin-left: 13px;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 400;
+          color: #213f7d;
+          opacity: 0.7;
+          margin-left: 10px;
+          &:hover {
+            color: #213f7d;
+            opacity: 1;
+          }
+        }
+
+        .active {
+          background-color: #f4fcfc;
+          border-left: 3px solid #39cdcc;
+          padding: 10px 8px;
+          left: 0;
+          display: flex;
+          align-items: center;
+          position: absolute;
+         
+          @include breakpoint(0px, 300px) {
+            width: 92%;
+          }
+
+          @include breakpoint(300px, 530px) {
+            width: 95%;
+          }
+
+          @include breakpoint(530px, 671px) {
+            width: 92%;
+          }
+
+           @include breakpoint(671px, 800px) {
+            width: 94%;
+          }
+
+          @include breakpoint(800px, 1024px) {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.pagination {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  width: 93%;
+  justify-content: space-between;
+}
+@media (min-width: 300px) and (max-width: 360px) {
+  .pagination {
+    width: 88% !important;
+  }
+}
+@media (min-width: 360px) and (max-width: 450px) {
+  .pagination {
+    width: 90% !important;
+  }
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .pagination {
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 360px) and (max-width: 640px) {
+  .pagination {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 640px) and (max-width: 720px) {
+  .pagination {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1024px) {
+  .pagination {
+    width: 93%;
+    padding: 10px;
+  }
+}
+.pagination .pageOf .pageNumber {
+  color: #545F7D;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.pagination .pageOf .pageSizeSelect {
+  border: none;
+  background-color: rgba(33, 63, 125, 0.1);
+  font-size: 13px;
+  padding: 1px;
+  color: #213F7D;
+  margin-right: 10px;
+  border-radius: 3px;
+  outline: none;
+}
+.pagination .nextPrev {
+  display: flex;
+  align-items: center;
+}
+.pagination .nextPrev .previousBtn {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pagination .nextPrev .previousBtn:disabled {
+  cursor: not-allowed;
+}
+.pagination .nextPrev .pageNumber {
+  color: #b8b9bb;
+  font-size: 11px;
+}
+.pagination .nextPrev .pageNumber .pageNumberInput {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  border: 1px solid rgba(33, 63, 125, 0.1);
+  outline: none;
+}
+.pagination .nextPrev .nextBtn {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pagination .nextPrev .nextBtn:disabled {
+  cursor: not-allowed;
+}/*# sourceMappingURL=pagination.css.map */

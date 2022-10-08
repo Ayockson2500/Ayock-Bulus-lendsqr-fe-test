@@ -1,0 +1,108 @@
+.sidebar {
+  flex: 1.2;
+  min-height: 100vh;
+  background-color: white;
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
+.sidebar .top {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .top .logo {
+  width: 120px;
+  margin-top: 10px;
+}
+.sidebar .center {
+  padding-left: 0px;
+  box-shadow: 6px 0px 9px -9px rgba(0, 0, 0, 0.34);
+}
+.sidebar .center .swhOrg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #213F7D;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.sidebar .center .swhOrg .swhOrgText {
+  margin: 0px 7px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+@media (min-width: 1024px) and (max-width: 1150px) {
+  .sidebar .center .swhOrg .swhOrgText {
+    margin: 0px 3px;
+  }
+}
+.sidebar .center .title {
+  font-size: 10px;
+  font-weight: 500;
+  color: #545F7D;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  margin-left: 22px;
+}
+.sidebar .center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar .center ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px 0px !important;
+}
+.sidebar .center ul li:hover {
+  background-color: #f4fcfc;
+  border-left: 3px solid #39cdcc;
+}
+.sidebar .center ul li .icons {
+  margin-left: 13px;
+}
+.sidebar .center ul li span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #213F7D;
+  opacity: 0.7;
+  margin-left: 10px;
+}
+.sidebar .center ul li span:hover {
+  color: #213F7D;
+  opacity: 1;
+}
+.sidebar .center ul li .active {
+  background-color: #f4fcfc;
+  border-left: 3px solid #39cdcc;
+  padding: 10px 8px;
+  left: 0;
+  position: absolute;
+  width: 91%;
+}
+@media (min-width: 1100px) and (max-width: 1150px) {
+  .sidebar .center ul li .active {
+    width: 89%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1074px) {
+  .sidebar .center ul li .active {
+    width: 85%;
+  }
+}
+@media (min-width: 1074px) and (max-width: 1100px) {
+  .sidebar .center ul li .active {
+    width: 87%;
+  }
+}/*# sourceMappingURL=sidebar.css.map */

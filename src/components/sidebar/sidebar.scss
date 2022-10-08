@@ -1,0 +1,116 @@
+@import '../../breakpointz';
+
+.sidebar {
+  flex: 1.2;
+  min-height: 100vh;
+  background-color: white;
+
+  @include lg{
+    display: none;
+  }
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      width: 120px;
+      margin-top: 10px;
+    }
+  }
+
+  .center {
+    padding-left: 0px;
+    -webkit-box-shadow: 6px 0px 9px -9px rgba(0,0,0,0.34); 
+    box-shadow: 6px 0px 9px -9px rgba(0,0,0,0.34);
+    .swhOrg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      color: #213F7D;
+      margin-top:20px;
+      margin-bottom: 25px;
+      margin-right: 15px;
+      cursor: pointer;
+
+      .swhOrgText{
+        margin: 0px 7px;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        @include breakpoint(1024px, 1150px){
+          margin: 0px 3px;
+        }
+      }
+    }
+    .title {
+      font-size: 10px;
+      font-weight: 500;
+      color: #545F7D;
+      margin-top: 15px;
+      margin-bottom: 13px;
+      margin-left: 22px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+    
+      li {
+        display: flex;
+        align-items: center;
+        padding: 10px 8px;
+        cursor: pointer;
+        position: relative;
+        margin: 5px 0px !important;
+
+        &:hover {
+          background-color: #f4fcfc;
+          border-left: 3px solid #39cdcc;
+        }
+
+        .icons {
+          margin-left: 13px;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 400;
+          color: #213F7D;
+          opacity: 0.7;
+          margin-left: 10px;
+          &:hover{
+            color: #213F7D;
+            opacity: 1;
+          }
+        }
+
+        .active{
+        background-color: #f4fcfc;
+        border-left: 3px solid #39cdcc;
+        padding: 10px 8px;
+        left: 0;
+        position: absolute;
+        width: 91%;
+        
+        @include breakpoint(1100px, 1150px){
+          width: 89%;
+        }
+
+        @include breakpoint(1024px, 1074px){
+          width: 85%;
+        }
+
+        @include breakpoint(1074px, 1100px){
+          width: 87%;
+        }
+      }
+      }
+    }
+  }
+}

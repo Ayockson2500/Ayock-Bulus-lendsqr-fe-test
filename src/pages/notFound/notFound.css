@@ -1,0 +1,15 @@
+.notFound {
+  display: flex;
+}
+.notFound .notFoundCont {
+  flex: 6;
+}
+.notFound .notFoundCont .notFoundMsg {
+  color: #213f7d;
+  font-size: 30px;
+  font-weight: 600;
+  height: calc(100vh - 74px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=notFound.css.map */

@@ -1,0 +1,99 @@
+@import '../../breakpoints';
+.pagination {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  width: 93%;
+  justify-content: space-between;
+
+  @include breakpoint(300px, 360px){
+    width: 88% !important;
+  }
+
+   @include breakpoint(360px, 450px){
+    width: 90% !important;
+  }
+
+  @include xs{
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @include sm{
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @include sm2{
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @include md{
+    width: 93%;
+    padding: 10px;
+  }
+
+  .pageOf {
+    .pageNumber {
+      color: #545F7D;
+      font-size: 14px;
+      margin-right: 5px;
+    }
+    .pageSizeSelect {
+      border: none;
+      background-color:rgba(33, 63, 125, 0.1);
+      font-size: 13px;
+      padding: 1px;
+      color: #213F7D;
+      margin-right: 10px;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+
+  .nextPrev {
+    display: flex;
+    align-items: center;
+    .previousBtn {
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:disabled {
+        cursor:not-allowed;
+      }
+    }
+    .pageNumber {
+      color: #b8b9bb;
+      font-size: 11px;
+
+      .pageNumberInput {
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: none;
+        border: 1px solid rgba(33, 63, 125, 0.1);
+        outline: none;
+      }
+    }
+    .nextBtn {
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

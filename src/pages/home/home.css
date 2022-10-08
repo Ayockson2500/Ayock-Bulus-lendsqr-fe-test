@@ -1,0 +1,47 @@
+.home {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .homeContainer {
+  flex: 6;
+}
+@media (max-width: 1024px) {
+  .home .homeContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.home .homeContainer .userDash {
+  color: #213f7d;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-left: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.home .homeContainer .userDash .addIcon {
+  margin-right: 30px;
+  cursor: pointer;
+  color: #213f7d;
+}
+.home .homeContainer .widgets {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .home .homeContainer .widgets {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=home.css.map */

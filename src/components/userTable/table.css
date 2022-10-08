@@ -1,0 +1,105 @@
+.tableContainer {
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 20px;
+  width: 93%;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-x: scroll;
+}
+@media (min-width: 300px) and (max-width: 360px) {
+  .tableContainer {
+    width: 75% !important;
+  }
+}
+@media (min-width: 360px) and (max-width: 450px) {
+  .tableContainer {
+    width: 78% !important;
+  }
+}
+@media (min-width: 0) and (max-width: 360px) {
+  .tableContainer {
+    width: 70%;
+  }
+}
+@media (min-width: 360px) and (max-width: 640px) {
+  .tableContainer {
+    width: 83%;
+  }
+}
+@media (min-width: 640px) and (max-width: 720px) {
+  .tableContainer {
+    width: 88%;
+  }
+}
+@media (min-width: 720px) and (max-width: 1024px) {
+  .tableContainer {
+    width: 93%;
+    padding: 10px;
+  }
+}
+.tableContainer .globalSearchInput {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.tableContainer .globalSearchInput .InputContainer {
+  width: 35%;
+  border-bottom: 0.5px solid rgb(226, 225, 225);
+  height: 35px;
+}
+.tableContainer .globalSearchInput .InputContainer input {
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.tableContainer .globalSearchInput .InputContainer input::-moz-placeholder {
+  font-size: 12px;
+  color: #545f7d;
+  opacity: 70%;
+}
+.tableContainer .globalSearchInput .InputContainer input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #545f7d;
+  opacity: 70%;
+}
+.tableContainer .globalSearchInput .InputContainer input::placeholder {
+  font-size: 12px;
+  color: #545f7d;
+  opacity: 70%;
+}
+.tableContainer table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.tableContainer table thead tr th {
+  border: none;
+  padding: 15px;
+  text-align: justify;
+  color: #545f7d;
+  font-size: 12px;
+  font-weight: 600;
+}
+.tableContainer table thead tr th .sortIcon {
+  margin-left: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tableContainer table thead tr th .sortIcon .sortIconImg {
+  width: 12px;
+}
+.tableContainer table thead tr th:nth-child(7) .sortIcon {
+  display: none !important;
+}
+.tableContainer table tbody tr td {
+  border-bottom: 1px solid rgb(241, 239, 239);
+  padding: 15px;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 400;
+}/*# sourceMappingURL=table.css.map */

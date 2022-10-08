@@ -1,0 +1,46 @@
+@import '../../breakpointz';
+.home {
+  display: flex;
+
+  @include lg{
+    display: flex;
+    flex-direction: column;
+  }
+  .homeContainer {
+    flex: 6;
+    
+    @include lg{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .userDash {
+      color: #213f7d;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 50px;
+      margin-left: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      
+      .addIcon{
+        margin-right: 30px;
+        cursor: pointer;
+        color: #213f7d;
+      }
+    }
+    .widgets {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+
+       @include lg{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+  }
+}
