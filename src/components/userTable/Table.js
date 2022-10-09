@@ -8,17 +8,15 @@ import {
   useResizeColumns,
   useFlexLayout,
 } from "react-table";
-import Users  from "../../users";
 import { Columns } from "./Column";
 import { GlobalFilter } from "./GlobalFilter";
 import "./table.scss";
 import sorting from "../../img/sorting.png";
 import Pagination from "./Pagination";
 
-export default function Table() {
+export default function Table({tableData}) {
   const columns = useMemo(() => Columns, []);
-  const data = useMemo(() => Users, []);
-
+  const data = useMemo(() => tableData, [tableData]);
   const {
     getTableProps,
     getTableBodyProps,
