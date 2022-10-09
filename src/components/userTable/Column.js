@@ -9,7 +9,7 @@ export const Columns = [
     width: 140,
     overflow: "hidden",
     textOverflow: "ellipsis",
-    accessor: "first_name",
+    accessor: "orgName",
   },
 
   {
@@ -17,7 +17,7 @@ export const Columns = [
     width: 120,
     overflow: "hidden",
     textOverflow: "ellipsis",
-    accessor: "last_name",
+    accessor: "userName",
   },
 
   {
@@ -30,10 +30,10 @@ export const Columns = [
 
   {
     Header: "PHONE NUMBER",
-    accessor: "phone",
+    accessor: "phoneNumber",
   },
   {
-    Header: "DATE JOINNED",
+    Header: "DATE JOINED",
     minWidth: 10,
     overflow: "hidden",
     textOverflow: "ellipsis",
