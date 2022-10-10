@@ -14,9 +14,10 @@ import "./table.scss";
 import sorting from "../../img/sorting.png";
 import Pagination from "./Pagination";
 
-export default function Table({tableData}) {
+export default function Table({tableData, showFilterModal, setShowFilterModal}) {
   const columns = useMemo(() => Columns, []);
   const data = useMemo(() => tableData, [tableData]);
+
   const {
     getTableProps,
     getTableBodyProps,
@@ -49,6 +50,10 @@ export default function Table({tableData}) {
 
   const { globalFilter, pageIndex, pageSize } = state;
 
+  const handleFilterShow = () => {
+    setShowFilterModal(!showFilterModal)
+  }
+
   return (
     <>
     <div className="tableContainer">
@@ -65,7 +70,7 @@ export default function Table({tableData}) {
                 >
                   {column.render("Header")}
                   <span className="sortIcon">
-                    <img className="sortIconImg" src={sorting} alt="sorting" />
+                    <img onClick={handleFilterShow} className="sortIconImg" src={sorting} alt="sorting" />
                   </span>
                 </th>
               ))}
