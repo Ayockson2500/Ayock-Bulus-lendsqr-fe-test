@@ -1,5 +1,3 @@
-import React from "react";
-
 const useLocalStorage = (key) => {
   return {
     getItem: () => JSON.parse(localStorage.getItem(key)),
