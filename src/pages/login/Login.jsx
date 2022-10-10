@@ -33,11 +33,12 @@ export default function Login() {
     e.preventDefault()
     dispatch({ type: "LOGIN_START" })
     try {
-      const res = users.filter(user=> user.first_name !== 'Adedeji')
-      dispatch({ type: "LOGIN_SUCCESS", payload: res[0] })
+      // const res = users.filter(user=> user.first_name !== 'Adedeji')
+      dispatch({ type: "LOGIN_SUCCESS", payload: [] })
       navigate('/home')
     } catch (err) {
-      dispatch({ type: "LOGIN_FAILURE", payload: err.response.data })
+      console.log(err);
+      dispatch({ type: "LOGIN_FAILURE", payload: err.response?.data })
     }
   };
 
