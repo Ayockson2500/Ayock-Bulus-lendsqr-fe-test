@@ -1,16 +1,25 @@
 import { useContext, useState } from "react";
-import Users from "../../users.json";
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContext'
 import "./login.scss";
 import logo from "../../img/logo.png";
 import loginSideImg from "../../img/loginSideImg.png";
+import {useEffect, } from "react";
+import useLocalStorage from "../../utils/useLocalStorage";
 
 export default function Login() {
   const [passwordType, setPasswordType] = useState("password");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate()
+
+  const [users, setUsers] = useState([]);
+  const { getItem } = useLocalStorage("users");
+
+  useEffect(() => {
+    setUsers(getItem());
+  }, []);
+
 
   const { dispatch } = useContext(AuthContext);
 
@@ -20,12 +29,11 @@ export default function Login() {
     } else setPasswordType("password");
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     dispatch({ type: "LOGIN_START" })
     try {
-      const res = await Users.filter(user=> user.first_name !== 'Ayock')
-      console.log(res);
+      const res = users.filter(user=> user.first_name !== 'Adedeji')
       dispatch({ type: "LOGIN_SUCCESS", payload: res[0] })
       navigate('/home')
     } catch (err) {
