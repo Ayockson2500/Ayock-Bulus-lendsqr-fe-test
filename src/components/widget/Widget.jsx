@@ -14,7 +14,7 @@ const Widget = ({ type }) => {
         title: "USERS",
         isMoney: false,
         icon: <img src={users} alt="users" />,
-        amount: "2453",
+        amount: "2,453",
       };
       break;
 
@@ -28,7 +28,7 @@ const Widget = ({ type }) => {
             alt="active_user"
           />
         ),
-        amount: "2453",
+        amount: "2,453",
       };
       break;
 
@@ -37,7 +37,7 @@ const Widget = ({ type }) => {
         title: "USERS WITH LOANS",
         isMoney: false,
         icon: <img src={users_with_loans} alt="users_with_loans" />,
-        amount: "12453",
+        amount: "12,453",
       };
       break;
 
@@ -46,7 +46,7 @@ const Widget = ({ type }) => {
         title: "USERS WITH SAVINGS",
         isMoney: false,
         icon: <img src={users_with_savings} alt="users_with_savings" />,
-        amount: "102453",
+        amount: "102,453",
       };
       break;
 
