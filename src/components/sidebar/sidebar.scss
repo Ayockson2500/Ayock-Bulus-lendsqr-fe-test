@@ -73,6 +73,9 @@
           background-color: #f4fcfc;
           border-left: 3px solid #39cdcc;
         }
+        .border-left:hover {
+          border-left: none !important;
+        }
 
         .icons {
           margin-left: 13px;

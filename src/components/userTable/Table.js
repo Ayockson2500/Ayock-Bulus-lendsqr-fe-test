@@ -8,16 +8,15 @@ import {
   useResizeColumns,
   useFlexLayout,
 } from "react-table";
-import Users  from "../../users";
 import { Columns } from "./Column";
 import { GlobalFilter } from "./GlobalFilter";
 import "./table.scss";
 import sorting from "../../img/sorting.png";
 import Pagination from "./Pagination";
 
-export default function Table() {
+export default function Table({tableData, showFilterModal, setShowFilterModal}) {
   const columns = useMemo(() => Columns, []);
-  const data = useMemo(() => Users, []);
+  const data = useMemo(() => tableData, [tableData]);
 
   const {
     getTableProps,
@@ -51,6 +50,10 @@ export default function Table() {
 
   const { globalFilter, pageIndex, pageSize } = state;
 
+  const handleFilterShow = () => {
+    setShowFilterModal(!showFilterModal)
+  }
+
   return (
     <>
     <div className="tableContainer">
@@ -67,7 +70,7 @@ export default function Table() {
                 >
                   {column.render("Header")}
                   <span className="sortIcon">
-                    <img className="sortIconImg" src={sorting} alt="sorting" />
+                    <img onClick={handleFilterShow} className="sortIconImg" src={sorting} alt="sorting" />
                   </span>
                 </th>
               ))}

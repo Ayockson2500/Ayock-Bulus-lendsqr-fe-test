@@ -1,7 +1,8 @@
-import icon from '../../img/vert.png'
-const vert ={
-  cursor:'pointer'
-}
+import icon from "../../img/vert.png";
+import { format } from "date-fns";
+const vert = {
+  cursor: "pointer",
+};
 
 export const Columns = [
   {
@@ -9,7 +10,7 @@ export const Columns = [
     width: 140,
     overflow: "hidden",
     textOverflow: "ellipsis",
-    accessor: "first_name",
+    accessor: "orgName",
   },
 
   {
@@ -17,7 +18,7 @@ export const Columns = [
     width: 120,
     overflow: "hidden",
     textOverflow: "ellipsis",
-    accessor: "last_name",
+    accessor: "userName",
   },
 
   {
@@ -30,14 +31,21 @@ export const Columns = [
 
   {
     Header: "PHONE NUMBER",
-    accessor: "phone",
+    accessor: "phoneNumber",
   },
   {
-    Header: "DATE JOINNED",
+    Header: "DATE JOINED",
     minWidth: 10,
     overflow: "hidden",
     textOverflow: "ellipsis",
-    accessor: "date",
+    accessor: "createdAt",
+    Cell: ({ value }) => {
+      return (
+        <>
+          <p>{format(new Date(value), "MMM dd, yyyy hh:mm aa")}</p>
+        </>
+      );
+    },
   },
   {
     Header: "STATUS",
@@ -112,6 +120,6 @@ export const Columns = [
     Header: "",
     width: 1,
     id: "icon",
-    Cell: () => (<img style={vert} src={icon} alt='icon' />)
+    Cell: () => <img style={vert} src={icon} alt="icon" />,
   },
 ];
