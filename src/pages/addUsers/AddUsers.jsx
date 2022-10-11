@@ -1,11 +1,11 @@
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
+import view_details from "../../img/view_details.png";
+import blacklist_user from "../../img/blacklist_user.png"
+import activate_user from "../../img/activate_user.png"
 import "./addUsers.scss";
 import Widget from "../../components/widget/Widget";
 import Table from "../../components/userTable/Table";
-import blacklist_user from "../../img/blacklist_user.png";
-import view_details from "../../img/view_details.png";
-import activate_user from "../../img/activate_user.png";
 import { useState, useEffect } from "react";
 import useLocalStorage from "../../utils/useLocalStorage";
 
@@ -33,7 +33,6 @@ export default function Users() {
 
         <div className="listContainer">
           <Table tableData={users} />
-
 
           <div className="vert">
             <div className="viewDetails">

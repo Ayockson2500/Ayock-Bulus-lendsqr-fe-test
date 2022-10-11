@@ -37,7 +37,7 @@ export default function Home() {
             <span>Users</span>
           </Link>
         </div>
-        
+
         <div className="widgets">
           <Widget type="users" />
           <Widget type="active_users" />
@@ -45,8 +45,12 @@ export default function Home() {
           <Widget type="users_with_savings" />
         </div>
 
-        <Table showFilterModal={showFilterModal} setShowFilterModal={setShowFilterModal} tableData={users} />
-        <FilterModal show={showFilterModal} setShowFilterModal={setShowFilterModal} />
+        <Table
+          showFilterModal={showFilterModal}
+          setShowFilterModal={setShowFilterModal}
+          tableData={users}
+        />
+        <FilterModal show={showFilterModal} />
       </div>
     </div>
   );
