@@ -9,7 +9,7 @@ import {
   useFlexLayout,
 } from "react-table";
 import { Columns } from "./Column";
-import { GlobalFilter } from "./GlobalFilter";
+// import { GlobalFilter } from "./GlobalFilter";
 import "./table.scss";
 import sorting from "../../img/sorting.png";
 import Pagination from "./Pagination";
@@ -33,7 +33,7 @@ export default function Table({tableData, showFilterModal, setShowFilterModal}) 
     setPageSize,
     prepareRow,
     state,
-    setGlobalFilter,
+    // setGlobalFilter,
   } = useTable(
     {
       columns,
@@ -57,7 +57,7 @@ export default function Table({tableData, showFilterModal, setShowFilterModal}) 
   return (
     <>
     <div className="tableContainer">
-      <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
+      {/* <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} /> */}
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
